@@ -1,285 +1,300 @@
-def display_days(): 
+def display_days():
 
-    days_list = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] 
+    days_list = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-    for day in days_list: 
+    for day in days_list:
 
-        print(day) 
-
-
-# function call 
-
-display_days() 
-
-def greet(): 
-
-    print(f"Good Morning, {username} !") 
+        print(day)
 
 
-# get username from user 
+# function call
 
-username = input("Enter User Name:") 
+display_days()
 
-# function call 
 
-greet() 
+def greet():
+
+    print(f"Good Morning, {username} !")
+
+
+# get username from user
+
+username = input("Enter User Name:")
+
+# function call
+
+greet()
 
 # Factorial
 
-def facto(x): 
 
-    if x==0: 
+def facto(x):
 
-        return 1 
+    if x == 0:
 
-    else: 
+        return 1
 
-        return(x*facto(x-1)) 
+    else:
 
-# lets calculate factorial of 4 
+        return (x*facto(x-1))
 
-four_fact=facto(4) 
+# lets calculate factorial of 4
 
-print(four_fact) 
 
-# lets calculate factorial of 3 
+four_fact = facto(4)
 
-three_fact=facto(3) 
+print(four_fact)
 
-print(three_fact) 
+# lets calculate factorial of 3
 
-num = int(input("Enter a number: ")) 
+three_fact = facto(3)
 
-factorial = 1 
+print(three_fact)
 
-if num < 0: 
+num = int(input("Enter a number: "))
 
-    print(" Factorial does not exist for negative numbers") 
+factorial = 1
 
-elif num == 0: 
+if num < 0:
 
-    print("The factorial of 0 is 1") 
+    print(" Factorial does not exist for negative numbers")
 
-else: 
+elif num == 0:
 
-    for i in range(1,num + 1): 
+    print("The factorial of 0 is 1")
 
-        factorial = factorial*i 
+else:
 
-    print("The factorial of",num,"is",factorial) 
+    for i in range(1, num + 1):
 
-def two_nums_add(): 
+        factorial = factorial*i
 
-    # calculate addition 
+    print("The factorial of", num, "is", factorial)
 
-    addition=num1+num2 
 
-    # return the addition 
+def two_nums_add():
 
-    return(addition) 
+    # calculate addition
 
-# lets define two variables 
+    addition = num1+num2
 
-num1=10 
+    # return the addition
 
-num2=20 
+    return (addition)
 
-# function call and store the sum in result variable 
+# lets define two variables
 
-result=two_nums_add() 
 
-print(f"Their addition(num1+num2): {result}")     
+num1 = 10
 
-def calculate(): 
+num2 = 20
 
-    # calculate sum 
+# function call and store the sum in result variable
 
-    addition=num1+num2 
+result = two_nums_add()
 
- 
+print(f"Their addition(num1+num2): {result}")
 
-    # calculate product 
 
-    product=num1*num2 
+def calculate():
 
- 
+    # calculate sum
 
-    # return sum and product 
+    addition = num1+num2
 
-    return(addition,product) 
+    # calculate product
 
- 
+    product = num1*num2
 
- 
+    # return sum and product
 
-# lets define two variables 
+    return (addition, product)
 
-num1=10 
+# lets define two variables
 
-num2=20 
 
- 
+num1 = 10
 
-# Lets store sum inside num_add variable 
+num2 = 20
 
-# and product inside num_prod 
 
-num_add,num_prod=calculate() 
+# Lets store sum inside num_add variable
 
-print(f'Their addition(num1+num2): {num_add}') 
+# and product inside num_prod
 
-print(f'Their product(num1*num2): {num_prod}') 
+num_add, num_prod = calculate()
 
-def add_numbers(num1,num2): 
+print(f'Their addition(num1+num2): {num_add}')
 
-    print(f'first number:{num1}') 
+print(f'Their product(num1*num2): {num_prod}')
 
-    print(f'second number:{num2}') 
 
-    result = num1+num2 
+def add_numbers(num1, num2):
 
-    print(f'their addition:{result}') 
+    print(f'first number:{num1}')
 
-a = 10 
+    print(f'second number:{num2}')
 
-b = 40 
+    result = num1+num2
 
-add_numbers(a, b) 
+    print(f'their addition:{result}')
 
-def attendance(name1,name2,name3): 
 
-    print(f'Roll number one:{name1}') 
+a = 10
 
-    print(f'Roll number two:{name2}') 
+b = 40
 
-    print(f'Roll number three:{name3}') 
+add_numbers(a, b)
 
-    print(f'Attendance completed ...\n') 
 
-a = 'Raj' 
+def attendance(name1, name2, name3):
 
-b = 'Pooja' 
+    print(f'Roll number one:{name1}')
 
-c = 'Kamal' 
+    print(f'Roll number two:{name2}')
 
-attendance(a, b, c) 
+    print(f'Roll number three:{name3}')
 
-attendance(c, b, a) 
+    print(f'Attendance completed ...\n')
 
-attendance(b, a, c) 
+
+a = 'Raj'
+
+b = 'Pooja'
+
+c = 'Kamal'
+
+attendance(a, b, c)
+
+attendance(c, b, a)
+
+attendance(b, a, c)
 
 # Global variables
 
-my_num=int(input("please enter number:")) 
+my_num = int(input("please enter number:"))
 
-def make_twice(): 
 
-    print('lets make it twice:') 
-    print(my_num*2) 
+def make_twice():
 
-print(f"Your number is:{my_num}") 
+    print('lets make it twice:')
+    print(my_num*2)
 
-make_twice() 
+
+print(f"Your number is:{my_num}")
+
+make_twice()
 
 # Local variables
 
-my_num=int(input("please enter number:")) 
+my_num = int(input("please enter number:"))
 
-def multiply(): 
 
-    loc_num = 100 
+def multiply():
 
-    print('lets multiply with local variable:') 
+    loc_num = 100
 
-    print(my_num*loc_num) 
+    print('lets multiply with local variable:')
 
-multiply() 
+    print(my_num*loc_num)
 
-print(f"global variable is:{my_num}") 
 
-#print(f"local variable is:{loc_num}") # Local variable is not available
+multiply()
+
+print(f"global variable is:{my_num}")
+
+# print(f"local variable is:{loc_num}") # Local variable is not available
 
 # *args
 
-def add_nums(*args): 
 
-    print('Positional arguments passed to the function are:') 
-    print(args) 
+def add_nums(*args):
 
-    result = sum(args) 
+    print('Positional arguments passed to the function are:')
+    print(args)
 
-    return result 
+    result = sum(args)
 
-result = add_nums(10,20,30,40) 
+    return result
 
-print(f'The numbers addition: {result}') 
+
+result = add_nums(10, 20, 30, 40)
+
+print(f'The numbers addition: {result}')
 
 # **kwargs
 
-def add_nums(**kwargs): 
 
-    print('Keyword arguments passed to the function are:') 
+def add_nums(**kwargs):
 
-    print(kwargs) 
+    print('Keyword arguments passed to the function are:')
 
-    result = sum(kwargs.values()) 
+    print(kwargs)
 
-    return result 
+    result = sum(kwargs.values())
 
-result = add_nums(num1=10,num2=20,num3=30,num4=40) 
+    return result
 
-print(f'The numbers addition: {result}') 
+
+result = add_nums(num1=10, num2=20, num3=30, num4=40)
+
+print(f'The numbers addition: {result}')
 
 # Both arbitrary arguments
 
-def add_nums(*args, **kwargs): 
 
-    print('Positional arguments passed to the function are:') 
+def add_nums(*args, **kwargs):
 
-    print(args) 
+    print('Positional arguments passed to the function are:')
 
-    print('Keyword arguments passed to the function are:') 
+    print(args)
 
-    print(kwargs) 
+    print('Keyword arguments passed to the function are:')
 
-    result1 = sum(args) 
+    print(kwargs)
 
-    result2 = sum(kwargs.values()) 
+    result1 = sum(args)
 
-    return result1, result2 
+    result2 = sum(kwargs.values())
 
-pos1 = 1 
+    return result1, result2
 
-pos2 = 2 
 
-pos3 = 3 
+pos1 = 1
 
-pos4 = 4 
+pos2 = 2
 
-result1, result2 = add_nums(pos1, pos2, pos3, pos4, num1=10,num2=20,num3=30,num4=40) 
+pos3 = 3
 
-print(f'The positional argument numbers addition: {result1}') 
+pos4 = 4
 
-print(f'The keyword argument numbers addition: {result2}') 
+result1, result2 = add_nums(pos1, pos2, pos3, pos4,
+                            num1=10, num2=20, num3=30, num4=40)
+
+print(f'The positional argument numbers addition: {result1}')
+
+print(f'The keyword argument numbers addition: {result2}')
 
 # Global vs Local
 
-my_num=int(input("please enter number:")) 
+my_num = int(input("please enter number:"))
 
-def twice(): 
 
-    print(' --- local scope ---') 
+def twice():
 
-    global my_num 
+    print(' --- local scope ---')
 
-    my_num = 150 
+    global my_num
 
-    print(f"global variable in local scope:{my_num}") 
+    my_num = 150
 
-    print(f'lets make it twice:{my_num*2}') 
+    print(f"global variable in local scope:{my_num}")
 
-twice() 
+    print(f'lets make it twice:{my_num*2}')
 
-print(' --- global scope ---') 
 
-print(f"global variable in global scope:{my_num}") 
+twice()
+
+print(' --- global scope ---')
+
+print(f"global variable in global scope:{my_num}")
