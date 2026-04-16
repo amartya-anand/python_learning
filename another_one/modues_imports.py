@@ -14,3 +14,9 @@ catalog = [
 json_catalog = json.dumps(catalog, indent=2)
 print("=== Catalog as JSON ===")
 print(json_catalog)
+
+# Pars JSON back to Python
+
+parsed = json.loads(json_catalog)
+print(f"\nParsed back : {len(parsed)} products, first = {parsed[0]["Name"]}")
+# print(parsed)
