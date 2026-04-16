@@ -24,8 +24,22 @@ from collections import Counter
 
 # --- Order dates --- #
 
-order_date = datetime(2026, 4, 16, 13, 00)
-delivery_date = order_date + timedelta(days=5)
-print(f"Order placed: {order_date.strftime('%Y-%m-%d %H:%M')}")
-print(f"Expected delivery : {delivery_date.strftime('%B-%d, %Y')}")
-print(f"Days until delivery: {(delivery_date - order_date).days}")
+# order_date = datetime(2026, 4, 16, 13, 00)
+# delivery_date = order_date + timedelta(days=5)
+# print(f"Order placed: {order_date.strftime('%Y-%m-%d %H:%M')}")
+# print(f"Expected delivery : {delivery_date.strftime('%B-%d, %Y')}")
+# print(f"Days until delivery: {(delivery_date - order_date).days}")
+
+# --- Counter: Sales analytics --- #
+
+sales_log = [
+    "Wireless mouse", "Mouse", "USB-HUB", "Mouse", "Wireless mouse",
+    "USB-HUB", "Mouse", "Wireless mouse"
+]
+
+print("\n=== Sales Analytics ===")
+sales_count = Counter(sales_log)
+print(f"Total sales : {sum(sales_count.values())}")
+print("Top sellers:")
+for product, count in sales_count.most_common():
+    print(f" {product}: {count} units")
