@@ -70,6 +70,7 @@ def delete_product(product_id: int):
 
 
 # Use uvicorn.Server instead of uvicorn.run inside thread
+# Creating an Uvicorn instance and initializing it port number
 config = uvicorn.Config(app=app, host="127.0.0.1", port=8000, log_level="info")
 server = uvicorn.Server(config)
 
